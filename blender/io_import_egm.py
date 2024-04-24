@@ -11,7 +11,7 @@ from bpy.types import (
 
 bl_info = {
     "name": "EgomModel import",
-    "author": "Krisztián Nagy",
+    "author": "Pabitra Banerjee",
     "version": (1, 0, 0),
     "blender": (3, 5, 1),
     "location": "File > Import-Export",
