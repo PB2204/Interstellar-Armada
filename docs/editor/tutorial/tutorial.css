@@ -9,7 +9,8 @@
     font-weight: bold;
 }
 
-html, body {
+html,
+body {
     background-color: #aaaaaa;
     padding: 0;
     margin: 0;
@@ -18,7 +19,7 @@ html, body {
 }
 
 div.main-content {
-    margin: 0  auto;
+    margin: 0 auto;
     padding: 2em;
     background-color: #F5F5F5;
     width: 75em;
@@ -29,7 +30,9 @@ div.main-content {
     color: #222;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     border-bottom: 1px solid #ccc;
 }
 

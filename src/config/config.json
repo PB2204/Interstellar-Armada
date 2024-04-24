@@ -1,5 +1,5 @@
 {
-    "version": "0.5.5-dev:1195 (2023.11.28.)",
+    "version": "0.5.5-dev:1195 (2024.04.24.)",
     "debugVersion": false,
     "logVerbosity": 1,
     "platform": "web",
@@ -20,9 +20,6 @@
         "mission": "{{data}}/missions/"
     },
     "analyticsEnabled": true,
-    "analyticsUrl": "https://armada-analytics.herokuapp.com/",
-    "multiUrl": "wss://armada-multi.herokuapp.com/",
-    "missionHubUrl": "https://armada-missions.herokuapp.com/",
     "defaultLanguage": "English",
     "configFiles": {
         "settings": {
