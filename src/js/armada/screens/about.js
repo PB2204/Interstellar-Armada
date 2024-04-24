@@ -83,9 +83,9 @@ define([
         screens.HTMLScreen.prototype._updateComponents.call(this);
         this._versionParagraph.customizeContent({version: game.getVersion() + " (" + game.getPlatform() + ")"});
         this._aboutGameDevParagraph.customizeContent({
-            facebook: _link("https://www.facebook.com/interstellar.armada", "facebook"),
-            github: _link("https://github.com/nkrisztian89/interstellar-armada", "github"),
-            email: _link("mailto:armada.galactic.ace@gmail.com", "email")
+            facebook: _link("https://www.facebook.com/Journalist.Pabitra.Banerjee", "facebook"),
+            github: _link("https://github.com/PB2204/Interstellar-Armada", "github"),
+            email: _link("mailto:rockstarpabitra2204@gmail.com", "email")
         });
         this._aboutUsedSoftwareParagraph.customizeContent({
             inkscape: _link("https://inkscape.org", "Inkscape"),

@@ -1,10 +1,10 @@
 {
     "info": {
         "name": "resources",
-        "author": "Krisztián Nagy",
+        "author": "Pabitra Banerjee",
         "comment": "Created by Interstellar Armada editor",
-        "version": "0.4.1-dev:560 (2017.03.28.)",
-        "creationTime": "Fri Mar 31 2017 15:20:15 GMT+0200 (CEST)"
+        "version": "0.4.1-dev:560 (2024.04.24.)",
+        "creationTime": "Wed Apr 24 2024"
     },
     "textures": [{
             "name": "white",

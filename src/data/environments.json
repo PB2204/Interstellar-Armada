@@ -1,10 +1,10 @@
 {
     "info": {
         "name": "environments",
-        "author": "Krisztián Nagy",
+        "author": "Pabitra Banerjee",
         "comment": "Created by Interstellar Armada editor",
-        "version": "0.4.6-dev:893 (2020.05.10.)",
-        "creationTime": "Mon May 11 2020 20:36:15 GMT+0200 (közép-európai nyári idő)"
+        "version": "0.4.1-dev:560 (2024.04.24.)",
+        "creationTime": "Wed Apr 24 2024"
     },
     "environments": [{
             "name": "cathagan",
