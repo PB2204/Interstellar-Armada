@@ -1,0 +1,201 @@
+This file contains the detailed credits and licensing information about 
+the sound effects used in the Interstellar Armada: Galactic Ace game.
+
+More information about the licenses referred here:
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/
+CC BY 3.0: https://creativecommons.org/licenses/by/3.0/
+CC BY-NC 3.0: https://creativecommons.org/licenses/by-nc/3.0/
+CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+
+More information about the tools mentioned:
+Bfxr: http://www.bfxr.net/
+Audacity: http://www.audacityteam.org/
+
+File paths are given relative to the data/sfx folder of the game.
+
+---
+
+computer/alert.wav
+computer/beep_targeting_denied.wav
+computer/beep_targeting.wav
+computer/blip_message.wav
+computer/message_type_blip.ogg
+computer/flight_mode_switch.ogg
+computer/jump_start.ogg
+computer/jump_stop.ogg
+computer/missile_change.wav
+computer/missile_change_denied.wav
+computer/missile_salvo.wav
+computer/missile_locked.ogg
+computer/missile_locking.ogg
+computer/missile_loaded.ogg
+
+Copyright 2023-2024 Pabitra Banerjee
+Created using Bfxr, Audacity
+License: CC BY 4.0
+
+---
+
+explosion/container-explosion.ogg
+explosion/fighter-explosion.ogg
+explosion/fighter-explosion-2.ogg
+explosion/hit.ogg
+explosion/shield-hit.ogg
+explosion/large-ship-explosion.ogg
+explosion/small-ship-explosion.ogg
+shield/shield-up.ogg
+shield/shield-up-ship.ogg
+
+Edited by Pabitra Banerjee with Audacity
+License: CC BY 4.0
+Created (edited and mixed) from the following sound effects:
+
+http://freesound.org/people/isaac200000/sounds/181476
+Copyright: freesound user isaac200000, license: CC BY 3.0
+
+http://freesound.org/people/erdie/sounds/24754
+Copyright: freesound user erdie, license: CC BY 3.0
+
+http://freesound.org/people/djfroyd/sounds/353318
+Copyright: freesound user djfroyd, license: CC BY 3.0
+
+http://freesound.org/people/Omar%20Alvarado/sounds/93741
+Copyright: freesound user Omar Alvarado, license: CC BY 3.0
+
+http://freesound.org/people/andromadax24/sounds/178346
+Copyright: freesound user Andromadax24, license: CC BY 3.0
+
+http://freesound.org/people/nhumphrey/sounds/204418
+Copyright: freesound user NHumphrey, license: CC0 1.0
+
+http://freesound.org/people/veiler/sounds/264031
+Copyright: freesound user veiler, license: CC0 1.0
+
+http://freesound.org/people/treasuresounds/sounds/332628
+Copyright: freesound user TreasureSounds, license: CC BY 3.0
+
+http://freesound.org/people/jobro/sounds/87802
+Copyright: freesound user jobro, license: CC BY 3.0
+
+http://opengameart.org/content/big-explosion
+Copyright: Blender Foundation, license: CC BY 3.0
+
+http://freesound.org/people/fullmetaljedi/sounds/380443
+Copyright: freesound user FullMetalJedi, license: CC0 1.0
+
+http://freesound.org/people/unfa/sounds/259300
+Copyright: freesound user unfa, license: CC BY 3.0
+
+http://freesound.org/people/cydon/sounds/268557
+Copyright: freesound user cydon, license: CC0 1.0
+
+http://freesound.org/people/jobro/sounds/35462
+Copyright: freesound user jobro, license: CC BY 3.0
+
+http://freesound.org/people/cydon/sounds/268868
+Copyright: freesound user cydon, license: CC0 1.0
+
+---
+
+missile/missile-launch.ogg
+missile/missile-start.ogg
+missile/missile-start-small.ogg
+missile/missile-start-torpedo.ogg
+
+Edited by Pabitra Banerjee with Audacity
+License: CC BY 4.0
+Created (edited and mixed) from the following sound effects:
+
+http://freesound.org/people/RSilveira_88/sounds/216277
+Copyright: freesound user RSilveira_88, license: CC BY 3.0
+
+https://freesound.org/people/mensageirocs/sounds/232680/
+Copyright: freesound user mensageirocs, license: CC BY 3.0
+
+https://freesound.org/people/qubodup/sounds/184274/
+Copyright: freesound user qubodup, license: CC0 1.0
+
+---
+
+spacecraft/hum.ogg
+spacecraft/jump_cancel_fighter.ogg
+spacecraft/jump_cancel_ship.ogg
+spacecraft/jump_flash.ogg
+spacecraft/jump-prepare-fighter.ogg
+spacecraft/jump_prepare_ship.ogg
+spacecraft/jump_swoosh.ogg
+spacecraft/thruster.ogg
+
+Edited by Pabitra Banerjee with Audacity
+License: CC BY 4.0
+Created (edited and mixed) from the following sound effects:
+
+http://freesound.org/people/juskiddink/sounds/117128
+Copyright: freesound user juskiddink, license: CC BY 3.0
+
+http://freesound.org/people/themfish/sounds/34203
+Copyright: freesound user themfish, license: CC BY 3.0
+
+http://freesound.org/people/unfa/sounds/259300
+Copyright: freesound user unfa, license: CC BY 3.0
+
+http://freesound.org/people/RSilveira_88/sounds/216277
+Copyright: freesound user RSilveira_88, license: CC BY 3.0
+
+http://freesound.org/people/reacthor/sounds/237790
+Copyright: freesound user reacthor, license: CC0 1.0
+
+http://freesound.org/people/electroviolence/sounds/234555
+Copyright: freesound user Electroviolence, license: CC0 1.0
+
+http://freesound.org/people/qubodup/sounds/146770/
+Copyright: freesound user qubodup, license: CC0 1.0
+
+---
+
+spacecraft/comm_relay.ogg
+
+Copyright 2024 Pabitra Banerjee
+Created (edited and mixed) by Pabitra Banerjee with Bfxr and Audacity
+License: CC BY 4.0
+Using the following sound effect:
+
+https://freesound.org/people/Tim_Verberne/sounds/558940
+Copyright: Tim Verberne, license: CC0 1.0
+
+---
+
+spacecraft/collision.ogg
+
+Edited by Pabitra Banerjee with Audacity
+License: CC BY-NC 4.0
+Created (edited and mixed) from the following sound effects:
+
+https://freesound.org/people/bareform/sounds/218721
+Copyright: freesound user bareform, license: CC BY-NC 3.0
+
+https://freesound.org/people/CGEffex/sounds/93835
+Copyright: freesound user CGEffex, license: CC BY-NC 3.0
+
+---
+
+ui/button_click.ogg
+ui/button_hover.wav
+
+Copyright 20224 Pabitra Banerjee
+Created using Bfxr, Audacity
+License: CC BY 4.0
+
+---
+
+weapon/weaponshot_heavyPlasma.ogg
+weapon/weaponshot_ion.ogg
+weapon/weaponshot_pirate.ogg
+weapon/weaponshot_plasma.ogg
+weapon/weaponshot-proton.ogg
+weapon/weaponshot_training.ogg
+
+Copyright 2022-2024 Pabitra Banerjee
+Created using Bfxr, Audacity
+License: CC BY 4.0

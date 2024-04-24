@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="Pabitra Banerjee"/>
+
+        <title>Interstellar Editor</title>
+
+        <link href="css/editor.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    </head>
+
+    <body>
+        <div id="items" class="window">
+            <div class="windowTitle">Items</div>
+            <div class="windowToolbar">
+                <button type="button" id="backButton" class="toolbarButton" disabled>&lt;</button>
+                <button type="button" id="forwardButton" class="toolbarButton" disabled>&gt;</button>
+                <button type="button" id="newItemButton" class="toolbarButton">New</button>
+                <button type="button" id="exportButton" class="toolbarButton">Export</button>
+                <button type="button" id="importButton" class="toolbarButton">Import</button>
+            </div>
+            <div class="windowContent">
+                <div class="windowLabel">loading...</div>
+            </div>
+        </div>
+
+        <div id="preview" class="window">
+            <div class="windowTitle">Preview</div>
+            <div class="windowContent">
+                <div id="previewOptions" hidden></div>
+                <div id="previewDiv" hidden>
+                    <canvas id="previewCanvas" hidden>
+                    </canvas>
+                    <div id="previewTooltip" hidden></div>
+                </div>
+                <div id="previewInfo" hidden></div>
+                <div class="windowLabel">loading...</div>
+            </div>
+        </div>
+
+        <div id="properties" class="window">
+            <div class="windowTitle">Properties</div>
+            <div class="windowContent">
+                <div class="windowLabel">loading...</div>
+            </div>
+        </div>
+
+        <div id="newItemDialog" class="dialog" hidden>
+            <div class="dialogEntry">
+                <span class="dialogLabel">Item type:</span>
+                <select id="newItemType"></select>
+            </div>
+            <div id="newItemCategoryContainer" class="dialogEntry">
+                <span class="dialogLabel">Category:</span>
+                <select id="newItemCategory"></select>
+            </div>
+            <div class="dialogEntry">
+                <span class="dialogLabel">Copy from:</span>
+                <select id="newItemBase"></select>
+            </div>
+            <div class="dialogEntry">
+                <span class="dialogLabel">Name:</span>
+                <input type="text" id="newItemName" value=""/>
+            </div>
+            <div id="newItemDialogFiller" class="dialogEntry">
+                <span class="dialogLabel">&nbsp;</span>
+            </div>
+            <div class="dialogButtonRow">
+                <button type="button" id="newItemCreate">Create</button>
+                <button type="button" id="newItemCancel">Cancel</button>
+            </div>
+        </div>
+
+        <div id="exportDialog" class="dialog" hidden>
+            <div class="dialogEntry">
+                <span class="dialogLabel">Item type:</span>
+                <select id="exportType"></select>
+            </div>
+            <div class="dialogEntry" id="exportNameContainer">
+                <span class="dialogLabel">Name:</span>
+                <input type="text" id="exportName" value="classes"/>
+            </div>
+            <div class="dialogEntry" id="exportItemContainer">
+                <span class="dialogLabel">Item:</span>
+                <select id="exportItem"></select>
+            </div>
+            <div class="dialogEntry">
+                <span class="dialogLabel">Author:</span>
+                <input type="text" id="exportAuthor" value="Pabitra Banerjee"/>
+            </div>
+            <div class="dialogButtonRow">
+                <button type="button" id="exportExport">Export</button>
+                <button type="button" id="exportCancel">Cancel</button>
+            </div>
+        </div>
+
+        <div id="importDialog" class="dialog" hidden>
+            <div class="dialogEntry">
+                <span class="dialogLabel">Item type:</span>
+                <select id="importType"></select>
+            </div>
+            <div class="dialogEntry">
+                <span class="dialogLabel">File:</span>
+                <input type="file" id="importFile" accept="application/json"/>
+            </div>
+            <div class="dialogButtonRow">
+                <button type="button" id="importImport">Import</button>
+                <button type="button" id="importCancel">Cancel</button>
+            </div>
+        </div>
+
+        <script data-main="js/editor-main.js" src="assets/libs/require.js"></script>
+    </body>
+
+</html>

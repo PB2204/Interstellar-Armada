@@ -1,0 +1,35 @@
+@import "../_common.scss";
+
+.controls.pageContent {
+    height: calc(100% - #{2*$separator-height+$page-padding});
+
+    & .selector {
+        margin: 0.25em auto;
+
+        & button {
+        }
+    }
+
+    & div.noController {
+        max-width: 50vw;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+}
+
+.controlsTable {
+    max-width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.controls.tableTitle:hover {
+    @include highlight-text;
+}
+
+.pointerLock.selector>.selectorButtonContainer>button {
+    min-width: 6.95em;
+    margin-left: auto;
+    margin-right: 0.2em;
+}

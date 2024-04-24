@@ -1,0 +1,132 @@
+/*
+Copyright (C) 2017-2018, 2020-2021, 2023 Krisztián Nagy
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+// -----------------------------------------------------------------------------
+// imports
+
+@use "sass:math";
+
+@import "_color-scheme.scss";
+
+$glow: 0em 0em 0.5em $glow-color;
+$inner-glow: 0em 0em 0.5em $glow-color inset;
+$faint-glow: 0em 0em 0.4em darken($glow-color,7%);
+$shadow: 0em 0em 0.5em $shadow-color;
+
+$text-glow: $text-glow-color 0.1em 0.1em 0.5em;
+
+$cursor: url(../assets/images/cursor.png) 6 6;
+$cursor-light: url(../assets/images/cursor-light.png) 6 6;
+
+
+@function mulpercent($percent, $value) {
+    @return math.div($percent, 100%) * $value;
+}
+
+@function mulem($em, $value) {
+    @return math.div($em, 1em) * $value;
+}
+
+$button-font-size: 120%;
+$button-padding: 0.5em;
+
+$button-height: mulpercent($button-font-size, 1.09em + 2*$button-padding);
+
+$horizontal-menu-margin: 0.4em;
+
+$separator-padding: 0.4em;
+
+$page-padding: 1em;
+
+$title-font-size: 200%;
+$title-top-margin: 0.2em;
+$title-bottom-margin: 0.5em;
+
+$title-height: mulpercent($title-font-size, 1em + $title-top-margin + $title-bottom-margin);
+
+$separator-height: $title-height + 2*$separator-padding;
+
+$image-margin: 0.5em;
+
+$border-width: 0.1em;
+$border-style: solid;
+
+$input-label-width: 16.5em;
+$input-value-width: 9em;
+$input-width: $input-label-width + $input-value-width;
+
+@mixin glowing {
+    box-shadow: $glow;
+}
+
+@mixin faint-glowing {
+    box-shadow: $faint-glow;
+}
+
+@mixin inner-glowing {
+    box-shadow: $inner-glow;
+}
+
+@mixin shadowed {
+    box-shadow: $shadow;
+}
+
+@mixin glowing-text {
+    text-shadow: $text-glow;
+}
+
+@mixin highlight-text {
+    text-shadow:
+        $highlight-color 0 0 0.2em,
+        $highlight-color 0 0 0.2em;
+}
+
+@mixin bordered {
+    box-sizing: border-box;
+    border: $border-width $border-style $panel-front-color;
+}
+
+@mixin top-bordered {
+    box-sizing: border-box;
+    border-top: $border-width $border-style $panel-front-color;
+}
+
+@mixin bottom-bordered {
+    box-sizing: border-box;
+    border-bottom: $border-width $border-style $panel-front-color;
+}
+
+@mixin inset-bordered-panel {
+    border: 0.15em solid $panel-front-color;
+    background-color: $panel-color;
+    box-shadow: 0 2px 5px $inset-shadow-color inset;
+}
+
+@mixin styled-scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: relDarken($highlight-color,0.333) transparent;
+    &::-webkit-scrollbar {
+        width: 0.2vw;
+        min-width: 2px;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: relDarken($highlight-color,0.333);
+    }
+}

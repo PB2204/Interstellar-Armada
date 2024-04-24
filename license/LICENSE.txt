@@ -1,0 +1,4 @@
+Interstellar Armada: Galactic Ace license information
+
+This various parts of this piece of software are released under different licenses found in this folder.
+For information about which license applies to which part of the software, please refer to LICENSE.txt in the root folder of the game or the About page available within the game.

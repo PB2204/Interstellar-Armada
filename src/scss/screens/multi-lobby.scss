@@ -1,0 +1,132 @@
+@import "../_common.scss";
+
+.multiLobby.pageContent {
+    width: 100%;
+    height: calc(100% - #{2*$separator-height+3*$page-padding});
+    margin-top: $page-padding;
+    text-align: center;
+}
+
+h2.gameTitle {
+    margin-top: 0;
+}
+
+.playersContainer, .settingsContainer {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: calc(100% - 18em);
+    vertical-align: top;
+}
+
+@media screen and (min-aspect-ratio: 2/1) {
+    .playersContainer {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.settingsContainer {
+    min-width: 16em;
+    text-align: left;
+}
+
+.hostSettings div.smallSelectorPropertyContainer {
+    width: 7em;
+}
+
+table.multiPlayers {
+    max-width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.colorIndicator {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0;
+    padding: 0;
+    margin: 0.2em;
+}
+
+.colorSelector:hover {
+    @include glowing;
+}
+
+.hostSettings button {
+    width: 10em;
+}
+
+.chatContainer {
+    width: 100%;
+    padding-bottom: 1em;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    @media screen and (min-aspect-ratio: 2/1) {
+        width: auto;
+        right: 0;
+    }
+}
+
+.chatLog {
+    @include bordered;
+    @include styled-scrollbar;
+    background: $panel-back-color;
+    width: 38em;
+    height: 10em;
+    margin: 1em auto;
+    padding: 0;
+}
+
+.chatLog>p {
+    margin: 0.2em;
+    padding: 0.2em;
+    background: $panel-front-color;
+    transition: background 0.75s;
+}
+
+div.chatMessageContainer {
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0.6em;
+}
+
+input.chatMessage {
+    width: 30em;
+    height: 2em;
+    margin: 0;
+}
+
+span.remainingMessageChars {
+    display: inline-block;
+    position: absolute;
+    right: 0.3em;
+    bottom: 0.2em;
+    font-size: 65%;
+    color: $dark-text-color;
+    background-color: rgba(17, 17, 17, 0.5);
+}
+
+button.chatSend, button.kickPlayer, button.selectSpacecraft {
+    min-width: 6em;
+    height: 1.6em;
+    padding: 0;
+}
+
+.multi-message-sender {
+    color: $highlight-color;
+}
+
+.multi-message-system {
+    color: $dark-text-color;
+}
+
+.multi-message-time {
+    color: $darker-text-color;
+    font-size: 80%;
+}

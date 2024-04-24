@@ -1,0 +1,267 @@
+@import "../_common.scss";
+
+$horizontal-margin: 1em;
+$list-width: 14em;
+$header-height: 3em;
+
+.missions.pageContent {
+    width: calc(100% - #{$horizontal-margin});
+    height: calc(100% - #{2*$separator-height+3*$page-padding});
+    margin-top: $page-padding;
+}
+
+.missionListContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $list-width;
+    height: 100%;
+}
+
+.missionInfoContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - #{$list-width + $horizontal-margin});
+    height: 100%;
+
+    text-align: left;
+}
+
+.missionInfoHeader {
+    width: 29em;
+    height: $header-height;
+}
+
+.missionTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.missionLocation {
+    margin-top: 0.25em;
+}
+
+.difficultyContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 22em;
+    height: 3em;
+    padding-bottom: 0.25em;
+    padding-right: 0.25em;
+}
+
+$info-top-margin: 0.5em;
+
+.missionInfoBody {
+    margin-top: $info-top-margin;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    height: calc(100% - #{$header-height + $info-top-margin});
+
+    @include top-bordered;
+    @include styled-scrollbar;
+    
+    &>p {
+        margin-top: 0;
+    }
+    
+    &>h3 {
+        padding: 0.1em 0 0.2em 0.1em;
+        margin-bottom: 0.5em;
+        width: 25em;
+        background-image:
+            -webkit-linear-gradient(
+            left,
+            $panel-back-color,
+            rgba($panel-back-color,0)
+            );
+        background-image:
+            -moz-linear-gradient(
+            left,
+            $panel-back-color,
+            rgba($panel-back-color,0)
+            );
+    }
+}
+
+.missionDescription {
+    &>p {
+        margin-top: 0;
+        &>span {
+            &.bold {
+                font-weight: bold;
+            }
+            &.ship {
+                font-weight: bold;
+                color: $friendly-color;
+            }
+            &.ship-hostile {
+                font-weight: bold;
+                color: $hostile-color;
+            }
+        }
+    }
+    &>ul {
+        margin: 0;
+        &>li {
+            list-style-type: square;
+        }
+    }
+}
+
+.subcaption.completed {
+    color: #00CC00;
+}
+
+.missionTitle {
+    text-align: left;
+}
+
+.missionObjectivesTitle, .playerSpacecraftTitle {
+    text-align: left;
+    font-size: 110%;
+    padding: 0;
+    margin: 0;
+}
+
+.missionObjectives {
+    text-align: left;
+    font-size: 90%;
+    padding: 0;
+}
+
+img.missionMedal {
+    vertical-align: bottom;
+    margin: 0 0.1em 0.2em 0.1em;
+}
+
+.missionSpacecraftInfo {
+    margin: 0;
+    padding : 0;
+    display: table-cell;
+}
+
+.missionEquipment {
+    margin: 0;
+    padding: 0.4em 0em 0.4em 0;
+    @include bottom-bordered;
+}
+
+button.fileButton {
+    margin: 0.5em;
+}
+
+.submitMissionPopup {
+    text-align: center;
+    position: relative;
+    white-space: normal;
+    padding: 0.6em;
+}
+
+.submitMissionPopupContent {
+    position: relative;
+    margin: 1em auto;
+    max-width: 95%;
+    text-align: center;
+}
+
+.submitMissionInputLabel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10em;
+    text-align: left;
+}
+
+.submitMissionCommentLabel {
+    width: 21em;
+    display: inline-block;
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+input.submitMissionInput {
+    width: 11em;
+    margin: 0.5em 0;
+}
+
+textarea.submitMissionComment {
+    width: 21em;
+    height: 4em;
+}
+
+div.submitMissionTermsContainer {
+    margin-left: 0.5em;
+    width: 21em;
+}
+
+.submitMissionPopupHeader {
+    margin: 0.4em auto;
+    padding: 0;
+}
+
+button.submitFileButton {
+    width: 9em;
+    margin: 0.5em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table.submissions {
+    max-width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    & tbody {
+        max-height: 28em;
+        display: block;
+        @include styled-scrollbar;
+        @media screen and (min-aspect-ratio: 2/1) {
+            max-height: 22em;
+        }
+    }
+    & thead, & tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    & tbody tr:hover>td {
+        color: $light-text-color;
+        background-color: $panel-front-color;
+    }
+    & td {
+        vertical-align: top;
+    }
+    & th.submissionTitleColumn {
+        width: 14.4em;
+    }
+    & td.submissionTitleColumn {
+        white-space: normal;
+        width: 16em;
+    }
+    & th.submissionDateColumn {
+        width: 9em;
+    }
+    & td.submissionDateColumn {
+        width: 10em;
+    }
+    & th.submissionStatusColumn {
+        width: auto;
+    }
+    & td.submissionStatusColumn {
+        white-space: normal;
+        width: auto;
+    }
+    & th.submissionStatsColumn {
+        width: 7em;
+    }
+    & td.submissionStatsColumn {
+        width: 8em;
+    }
+    & .submissionActionsColumn {
+        width: 10.5em;
+        font-size: 100%;
+    }
+}

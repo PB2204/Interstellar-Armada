@@ -1,0 +1,85 @@
+@import "../_common.scss";
+
+$content-height: calc(100% - #{2*$separator-height+3*$page-padding});
+
+.database.pageContent {
+    height: $content-height;
+    margin-top: $page-padding;
+}
+
+$data-preview-size: 50vh;
+$gap: 0.5em;
+
+div.itemDataSheet {
+    text-align: left;
+    padding: 0.6em;
+    width: $data-preview-size;
+    min-width: 12em;
+    height: calc(100% - #{$data-preview-size} - #{$gap});
+    @include bordered;
+    background-color: $panel-back-color;
+}
+
+div.itemDataSheet > p {
+    margin: 0;
+}
+
+div.itemDescriptionContainer {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: calc(100% - #{$data-preview-size} - #{$gap});
+    height: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0.5em;
+    @include bordered;
+    @include styled-scrollbar;
+}
+
+div.itemView {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.itemTitle {
+    font-size: 130%;
+}
+
+.withSubtitle {
+    margin-top: 0.3em;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-size: 105%;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
+canvas.databaseViewScreen {
+    width: $data-preview-size;
+    height: $data-preview-size;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: $gap;
+    @include bordered;
+}
+
+@media screen and (min-aspect-ratio: 2/1) {
+    $data-sheet-height: 7.4em;
+    $data-sheet-font-size: 90%;
+
+    canvas.databaseViewScreen {
+        height: calc(100% - #{mulpercent($data-sheet-font-size, $data-sheet-height)+$gap});
+    }
+    
+    div.itemDataSheet {
+        font-size: $data-sheet-font-size;
+        height: $data-sheet-height;
+    }
+}

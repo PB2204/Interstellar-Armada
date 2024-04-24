@@ -1,0 +1,53 @@
+@import "../_common.scss";
+
+div.selector {
+    display: table;
+    width: $input-width;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    margin: 0.25em 0.5em;
+    
+    background-color: $panel-back-color;
+    @include bordered;
+    
+    &[hidden] {
+        display: none;
+    }
+}
+
+div.selectorButtonContainer {
+    display: table-cell;
+    vertical-align: middle;
+    width: $input-value-width;
+    margin: 0;
+}
+
+div.selectorPropertyContainer {
+    font-size: 90%;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    width: $input-label-width;
+    margin: 0;
+    padding: 0;
+}
+
+div.smallSelector {
+    display: table;
+    &[hidden] {
+        display: none;
+    }
+}
+
+div.smallSelectorPropertyContainer {
+    font-size: 85%;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+
+div.separateSelector {
+    display: inline-block;
+}
